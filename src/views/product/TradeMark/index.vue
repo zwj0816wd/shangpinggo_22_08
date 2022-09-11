@@ -47,12 +47,6 @@
       <el-table-column prop="logoUrl" label="品牌logo" width="width">
         <template v-slot="{ row, $index }">
           <img :src="row.logoUrl" alt="" style="width: 100px" />
-          <img
-            v-if="$index < 3 && page == 1"
-            src="./static/default.jpg"
-            alt=""
-            style="width: 100px"
-          />
         </template>
       </el-table-column>
       <el-table-column prop="prop" label="操作" width="width">
